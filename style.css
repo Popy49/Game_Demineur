@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-VariableFont_wght.ttf');
+}
+
+
+#container{
+    background-color:rgb(187, 187, 74);
+    width: 600px;
+    height: 100vh;
+    margin: auto;
+    border-radius: 30px;
+    font-family: "Lora", Verdana;
+}
+
+
+#infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table{
+    border: 4px solid rgb(226, 226, 226);
+    /* border-collapse: collapse; */
+    margin: auto;
+    background-color:  rgb(56, 56, 56);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+}
+
+tr, td{
+    border: 1px solid rgb(226, 226, 226);
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+button{
+    font-family: "Lora", Verdana;
+}
+
+.bouton, .boutonBomb{
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 0.5em;
+    border-width: 1px;
+    border-color: rgb(226, 226, 226);
+    background-color: rgba(223, 236, 148,0.5);
+    color: rgb(226, 226, 226);
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+    
+}
+
+.boutonMark{
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 0.5em;
+    border-width: 1px;
+    border-color: rgb(226, 226, 226);
+    /* background-color: rgba(155, 12, 184, 0.5); */
+    background: no-repeat center/100%  rgba(223, 236, 148,0.5) url("drapeau.png");
+    color: rgb(226, 226, 226);
+    font-weight: 600;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    color: rgb(56, 56, 56);
+    font-family: "Lora", Verdana;
+    text-align: center;
+}
+
+#setup{
+    text-align: center;
+}
+
+#smile{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    width: 50px;
+    filter: drop-shadow(0 0 0.2rem black);
+}
+
+#imgbomb{
+    display: block;
+    margin: auto;
+    width: 20px;
+}
+
+#imgTime{
+    margin: auto;
+    width: 15px;
+}
+
+
+#mines, #chrono{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    filter: drop-shadow(0 0 0.05rem black);
+}

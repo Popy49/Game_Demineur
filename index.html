@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <h1>Démineur</h1>
+    <img id="smile" onclick="replay(level)" src="images/heureux.svg"></img>
+        <div id="setup">
+            <button class="level" value="1" onclick="setLevel(this)">Beginner</button>
+            <button class="level" value="2" onclick="setLevel(this)">Intermediate</button>
+            <button class="level" value="3" onclick="setLevel(this)">Expert</button>
+        </div>
+
+        <div id="infos">
+            <div id="mines"></div>
+            <div id="chrono">0</div>
+        </div>
+
+        <div id="play">
+            <table id="base">
+                <tr></tr>
+            </table>
+        </div>
+
+        <div id="result">
+            <div id="replayPart">
+                <button id="replay" value="replay" onclick="replay(level)">Replay</button>
+            </div>
+            <div id="score">
+                
+            </div>
+            <div id="best">
+            </div>
+        </div>
+    </div>
+<script src="app3.js"></script>
+</body>
+</html>
